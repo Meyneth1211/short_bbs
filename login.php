@@ -5,8 +5,8 @@ if ($_SERVER['REQUEST_METHOD']==='GET') {
     echo <<<FORM
         <h1>ログイン</h1>
         <form action="login.php" method="post">
-            ユーザー名:<input type="text" name="username" placeholder="kazuma" required>
-            パスワード:<input type="password" name="password" placeholder="kazuma" required>
+            <p>ユーザー名:<input type="text" name="username" placeholder="kazuma" required></p>
+            <p>パスワード:<input type="password" name="password" placeholder="kazuma" required></p>
             <button type="submit">ログイン</button>
         </form>
     FORM;
