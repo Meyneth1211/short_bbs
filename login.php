@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD']==='GET') {
 } elseif ($_SERVER['REQUEST_METHOD']==='POST') {
     //ユーザ名とパスワードが入力されているか判定
     if (!empty($_POST['username']) && !empty($_POST['password'])) {
-        require_once 'DBaccess.php';
+        require_once 'db.php';
         $pdo= getDB();
         $sql='SELECT id, username FROM user WHERE username = ? AND password = ?';
         $stmt = $pdo->prepare($sql);
