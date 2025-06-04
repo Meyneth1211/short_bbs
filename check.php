@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once 'db.php';
+$pdo = getDB();
 
 $username = $_POST['username'] ?? '';
 $password = $_POST['password'] ?? '';
