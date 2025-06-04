@@ -1,3 +1,4 @@
+<?php require_once 'check.php' ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -8,7 +9,7 @@
 <body>
     <h1>📜 投稿一覧</h1>
     <?php
-    require_once 'check.php';
+    displayname();
     ?>
     <p><a href="form.php">← 投稿フォームへ戻る</a></p>
     <hr>
