@@ -9,8 +9,8 @@
 <body>
     <form action="check.php" method="POST">
     <h1>ログイン</h1>
-ユーザー名:<input type="text" name="username"><br>
-パスワード:<input type="password" name="password"><br>
+ユーザー名:<input type="text" name="username" value="itsuki"><br>
+パスワード:<input type="password" name="password" value="itsuki"><br>
 <input type="submit" value="ログイン">
     </form>
 </body>
