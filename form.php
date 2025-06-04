@@ -1,3 +1,6 @@
+<?php
+require_once 'check.php';
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -7,9 +10,7 @@
 </head>
 <body>
     <h1>💬 一言掲示板</h1>
-    <?php
-    require_once 'check.php';
-    ?>
+    <?php displayname(); ?>
     <form action="post.php" method="post">
         <p>名前：<input type="text" name="name" required></p>
         <p>コメント：<br>
