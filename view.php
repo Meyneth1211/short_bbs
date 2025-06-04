@@ -19,6 +19,7 @@
     <p><a href="form.php">← 投稿フォームへ戻る</a></p>
     <hr>
     <?php
+    require_once 'db.php';
     $pdo=getDB();
     $sql='SELECT user.username, comment.content, comment.created_at FROM comment INNER JOIN user ON comment.user_id = user.id ORDER BY comment.created_at DESC';
     $stmt = $pdo->prepare($sql);
