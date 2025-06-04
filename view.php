@@ -8,13 +8,7 @@
 <body>
     <h1>📜 投稿一覧</h1>
     <?php
-    session_start();
-    if ($_SESSION['userid']) {
-        echo '<p>ようこそ、'.htmlspecialchars($_SESSION['username']).'さん！</p>';
-    } else {
-        echo '<p>ようこそ、ゲストさん！</p>';
-    }
-    
+    require_once 'check.php';
     ?>
     <p><a href="form.php">← 投稿フォームへ戻る</a></p>
     <hr>
