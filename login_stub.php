@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD']==='GET') {
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         if (!empty($result)) {
             session_start();
-            $_SESSION['id'] = $result['id'];
+            $_SESSION['userid'] = $result['id'];
             $_SESSION['username'] = $result['username'];
             header('Location: view.php');
         } else {
