@@ -39,6 +39,7 @@
     } else {
         echo "<p>まだ投稿がありません。</p>";
     }
+    login_logout();
     ?>
 </body>
 </html>

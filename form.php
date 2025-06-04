@@ -18,5 +18,6 @@ require_once 'check.php';
         <p><button type="submit">投稿する</button></p>
     </form>
     <p><a href="view.php">▶ 投稿一覧を見る</a></p>
+    <?php login_logout(); ?>
 </body>
 </html>
